@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/matchText"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:background="@null"
+                android:inputType="text" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="8808-correct-animation.json"/>
+
+        <GridLayout
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:rowCount="5"
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="0"
+                android:layout_column="2" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="1"
+                android:layout_column="2" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="2"
+                android:layout_column="0" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="2"
+                android:layout_column="2" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="3"
+                android:layout_column="1" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="134dp"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:layout_row="3"
+                android:layout_column="2" />
+
+        </GridLayout>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="P1's Turn" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
